@@ -1,7 +1,7 @@
 # Modesto-Flowers Test task
 Adaptive Landing Page for Modesto Flowers / Адаптивный лендинг для Modesto Flowers
 
-ansem-11.github.io/modesto-flowers/
+https://ansem-11.github.io/modesto-flowers/
 
 # Install instruction
 
