@@ -1,0 +1,459 @@
+@import "_normalize";
+@import "_colors";
+
+html,
+body {
+  height: 100%;
+}
+
+
+body {
+  font-family: 'Raleway', sans-serif;
+  background: $white;
+  background-attachment: fixed;
+}
+  
+.wrapper {
+  width: 100%;
+  min-height: 100%;
+  position: relative;
+  margin: 0 auto;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+}
+
+.main {
+  background: url(../img/background.jpg) no-repeat center/cover;
+}
+
+h1, h2, h3, h4, p {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  li {
+    list-style-type: none;
+  }
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: $brown;
+}
+
+.hide {
+  display: none;
+}
+
+/******************* BEGIN: HEADER *******************/
+.header {
+  padding: 20px 100px;
+  margin-bottom: 106px;
+
+  &-wrap {
+    max-width: 1420px;
+    display: flex;
+    margin: 0 auto;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo{
+    display: block;
+    width: 98px;
+    height: 86px;
+  }
+
+  &__menu {
+    &-list {
+      display: flex;
+      padding:0;
+    }
+
+    &-item {      
+      &:not(:last-child) {
+        margin-right: 40px;
+      }
+  
+    }
+    
+    &-link {
+      color: $brown;
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 21px;
+      
+      &:hover {
+        text-decoration: 1px underline;
+        text-underline-offset: 3px;
+      }
+    }
+  }
+
+  &__contacts {  
+
+    &-link {
+      font-family: 'Raleway', sans-serif;
+      font-weight: 500;
+      font-size: 18px;
+      padding: 14px 30px;
+    }
+    
+    &-phone {
+      font-family: 'Roboto', sans-serif;
+      font-weight: 600;
+      font-size: 20px;
+      padding: 16px 30px;
+      margin-right: 20px;
+    }
+
+    &-enter {
+      margin-right: 10px;
+    }
+
+    &-join {
+      border: 1px solid #000000;
+      border-radius: 12px;
+    }
+
+    &-burger {
+      display: none;
+    }
+  }
+
+  &__tabs {
+    display: none;
+    &-mob{
+      display: none;
+    }
+  }
+
+}
+/******************* END: HEADER *******************/
+
+
+
+/******************* BEGIN: CONTENT *******************/
+.content {
+  &-wrap {
+    padding: 60px 0px;
+    margin: 0 auto;
+    max-width: 887px;
+    text-align: center;
+  }
+
+  &__title{
+    font-family: 'Marmelad', sans-serif;
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 66px;
+    margin-bottom: 40px;
+    .mob{
+      display: none;
+    }
+  }
+
+  &__subtitle{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    font-size: 26px;
+    line-height: 30px;
+    max-width: 700px;
+    margin: 0 auto 58px auto;
+  }
+
+  &__btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 291px;
+    &-btn {
+      display: block;
+      border-radius: 12px;
+      font-family: 'Raleway', sans-serif;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 21px;
+    }
+    .buy {
+      padding: 22px 34px;
+      background-color: $yellow;
+      margin-right: 20px;
+    }
+    .sell {
+      padding: 24px 42px;
+      background-color: $grey;
+    }
+  }
+  
+}
+/******************* END: CONTENT *******************/
+
+/******************* BEGIN: REGISTRATION *******************/
+.registration {
+  background: url(../img/background-content.jpg) no-repeat center/cover;
+  padding: 200px 0px;
+
+  &-wrap {
+    margin: 0 auto;
+    display: flex;
+    max-width: 980px;
+    padding: 80px;
+    background: url(../img/flowerbox.jpg) no-repeat center/cover;
+  }
+
+  &__description{
+    max-width: 580px;
+    margin-right: 80px;
+
+    &-title {
+      font-family: 'Marmelad', sans-serif;
+      font-size: 36px;
+      font-weight: 400;
+      line-height: 42px;
+      margin-bottom: 40px;
+    }
+
+    &-text {
+      font-family: 'Raleway', sans-serif;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 21px
+    }
+  }
+
+  &__form {
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    color: $brown;
+
+    &-label {
+      display: block;
+      margin-bottom: 10px;
+      line-height: 16px;
+
+      &--mob {
+        display: none;
+      }
+    }
+
+    &-input{
+      display: block;
+      margin-bottom: 20px;
+      background-color: $milk;
+      border: none;
+      border-radius: 6px;
+      padding: 16px 8px;
+      width: 304px;
+      
+      &::placeholder {
+        color: #8E825C;
+      }
+
+      &--mob {
+        display: none;
+      }
+    }
+
+    &-btns {
+      display: flex;
+    }
+
+    &-btn {
+      width: 320px;
+      height: 51px;
+      background-color: $yellow;
+      border: none;
+      border-radius: 12px;
+      margin-top: 20px;
+      font-family: 'Raleway', sans-serif;
+      font-size: 16px;
+      line-height: 18px;
+      font-weight: 600;
+
+      &--back {
+        width: 128px;
+        background-color: $grey;
+        margin-right: 9px;
+        margin-bottom: 20px;
+      }
+
+      &--enter {
+        width: 183px;
+      }
+    }
+
+    &-symbols {
+      max-width: 320px;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+input[type="checkbox"]:checked, 
+input[type="checkbox"]:not(:checked) {
+  position: absolute;
+  left: -9999px;
+}
+
+input[type="checkbox"]:checked + label, 
+input[type="checkbox"]:not(:checked) + label{
+  display: inline-block;
+  position: relative;
+  padding-left: 28px;
+  line-height: 20px;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+input[type="checkbox"]:checked + label:before, 
+input[type="checkbox"]:not(:checked) + label:before{
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #0E493F;
+  border-radius: 4px;
+}
+
+input[type="checkbox"]:checked + label:before {
+  background-color: #0E493F;
+}
+
+input[type="checkbox"]:not(:checked) + label:before {
+  background-color: $white;
+}
+
+input[type="checkbox"]:checked + label:after, 
+input[type="checkbox"]:not(:checked) + label:after {
+  content: "";
+  position: absolute;
+  transition: all 0.2s ease;
+}
+
+input[type="checkbox"]:checked + label:after, 
+input[type="checkbox"]:not(:checked) + label:after {
+  left: 6px;
+  top: 5px;
+  width: 10px;
+  height: 5px;
+  border-radius: 1px;
+  border-left: 2px solid $white;
+  border-bottom: 2px solid $white;
+  transform: rotate(-45deg);
+}
+
+/******************* END: REGISTRATION *******************/
+
+/******************* BEGIN: FOOTER *******************/
+.footer {
+  background-color: $brown;
+  padding: 80px 100px;
+  color: $ivory;
+
+  &-wrap {
+    max-width: 1420px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 4fr 2fr 2fr;
+    grid-template-areas:
+      "ofices social contacts";
+    justify-items: end;
+  }
+
+  &__title {
+    font-family: 'Marmelad', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 24px;
+  }
+
+  &__text {
+    max-width: 275px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21px;
+    margin-right: 40px;
+  }
+
+  &__ofices {
+    grid-area: ofices;
+  }
+
+  &__adress{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__social{
+    grid-area: social;
+
+    &-item{
+      margin-bottom: 16px;
+    }
+
+    &-link{
+      color: $ivory;
+      font-family: 'Raleway', sans-serif;
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 23px;
+    }
+  }
+
+  &__contacts {
+    grid-area: contacts;
+
+    &-phone,
+    &-mail {
+      color: $ivory;
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 23px;
+      display: block;
+      margin-bottom: 16px;
+    }
+
+    &-phone {
+      font-family: 'Roboto', sans-serif;
+    }
+
+    &-mail {
+      font-family: 'Raleway', sans-serif;
+    }
+
+    &-btn {
+      text-align: center;
+      font-family: 'Raleway', sans-serif;
+      font-weight: 600;
+      font-size: 16px;
+      width: 172px;
+      height: 48px;
+      background-color: $yellow;
+      color: $brown;
+      display: flex;
+      border-radius: 12px;
+      align-items: center;
+      justify-content: center;
+    }
+
+  }
+
+  &__copyright{
+    display: none;
+  }
+}
+/******************* END: FOOTER *******************/
+
+@import "_medias";

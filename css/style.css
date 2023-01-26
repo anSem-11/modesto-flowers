@@ -1,0 +1,751 @@
+/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+img, legend {
+  border: 0; }
+
+legend, td, th {
+  padding: 0; }
+
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block; }
+
+audio, canvas, progress, video {
+  display: inline-block;
+  vertical-align: baseline; }
+
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+[hidden], template {
+  display: none; }
+
+a {
+  background-color: transparent; }
+
+a:active, a:hover {
+  outline: 0; }
+
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+b, optgroup, strong {
+  font-weight: 700; }
+
+dfn {
+  font-style: italic; }
+
+h1 {
+  font-size: 2em;
+  margin: .67em 0; }
+
+mark {
+  background: #ff0;
+  color: #000; }
+
+small {
+  font-size: 80%; }
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -.5em; }
+
+sub {
+  bottom: -.25em; }
+
+svg:not(:root) {
+  overflow: hidden; }
+
+figure {
+  margin: 1em 40px; }
+
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0; }
+
+pre, textarea {
+  overflow: auto; }
+
+code, kbd, pre, samp {
+  font-family: monospace,monospace;
+  font-size: 1em; }
+
+button, input, optgroup, select, textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0; }
+
+button {
+  overflow: visible; }
+
+button, select {
+  text-transform: none; }
+
+button, html input[type=button], input[type=reset], input[type=submit] {
+  -webkit-appearance: button;
+  cursor: pointer; }
+
+button[disabled], html input[disabled] {
+  cursor: default; }
+
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+input {
+  line-height: normal; }
+
+input[type=checkbox], input[type=radio] {
+  box-sizing: border-box;
+  padding: 0; }
+
+input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button {
+  height: auto; }
+
+input[type=search] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box; }
+
+input[type=search]::-webkit-search-cancel-button, input[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+fieldset {
+  border: 1px solid silver;
+  margin: 0 2px;
+  padding: .35em .625em .75em; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.clearfix:after, .clearfix:before {
+  content: "";
+  display: table; }
+
+.clearfix:after {
+  clear: both; }
+
+.clearfix {
+  zoom: 1; }
+
+html,
+body {
+  height: 100%; }
+
+body {
+  font-family: 'Raleway', sans-serif;
+  background: #fff;
+  background-attachment: fixed; }
+
+.wrapper {
+  width: 100%;
+  min-height: 100%;
+  position: relative;
+  margin: 0 auto;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content; }
+
+.main {
+  background: url(../img/background.jpg) no-repeat center/cover; }
+
+h1, h2, h3, h4, p {
+  margin: 0; }
+
+ul {
+  padding: 0; }
+  ul li {
+    list-style-type: none; }
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #372E11; }
+
+.hide {
+  display: none; }
+
+/******************* BEGIN: HEADER *******************/
+.header {
+  padding: 20px 100px;
+  margin-bottom: 106px; }
+  .header-wrap {
+    max-width: 1420px;
+    display: flex;
+    margin: 0 auto;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items: center; }
+  .header__logo {
+    display: block;
+    width: 98px;
+    height: 86px; }
+  .header__menu-list {
+    display: flex;
+    padding: 0; }
+  .header__menu-item:not(:last-child) {
+    margin-right: 40px; }
+  .header__menu-link {
+    color: #372E11;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21px; }
+    .header__menu-link:hover {
+      text-decoration: 1px underline;
+      text-underline-offset: 3px; }
+  .header__contacts-link {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    padding: 14px 30px; }
+  .header__contacts-phone {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    padding: 16px 30px;
+    margin-right: 20px; }
+  .header__contacts-enter {
+    margin-right: 10px; }
+  .header__contacts-join {
+    border: 1px solid #000000;
+    border-radius: 12px; }
+  .header__contacts-burger {
+    display: none; }
+  .header__tabs {
+    display: none; }
+    .header__tabs-mob {
+      display: none; }
+
+/******************* END: HEADER *******************/
+/******************* BEGIN: CONTENT *******************/
+.content-wrap {
+  padding: 60px 0px;
+  margin: 0 auto;
+  max-width: 887px;
+  text-align: center; }
+.content__title {
+  font-family: 'Marmelad', sans-serif;
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 66px;
+  margin-bottom: 40px; }
+  .content__title .mob {
+    display: none; }
+.content__subtitle {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  font-size: 26px;
+  line-height: 30px;
+  max-width: 700px;
+  margin: 0 auto 58px auto; }
+.content__btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 291px; }
+  .content__btns-btn {
+    display: block;
+    border-radius: 12px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px; }
+  .content__btns .buy {
+    padding: 22px 34px;
+    background-color: #FFE182;
+    margin-right: 20px; }
+  .content__btns .sell {
+    padding: 24px 42px;
+    background-color: #EDEDED; }
+
+/******************* END: CONTENT *******************/
+/******************* BEGIN: REGISTRATION *******************/
+.registration {
+  background: url(../img/background-content.jpg) no-repeat center/cover;
+  padding: 200px 0px; }
+  .registration-wrap {
+    margin: 0 auto;
+    display: flex;
+    max-width: 980px;
+    padding: 80px;
+    background: url(../img/flowerbox.jpg) no-repeat center/cover; }
+  .registration__description {
+    max-width: 580px;
+    margin-right: 80px; }
+    .registration__description-title {
+      font-family: 'Marmelad', sans-serif;
+      font-size: 36px;
+      font-weight: 400;
+      line-height: 42px;
+      margin-bottom: 40px; }
+    .registration__description-text {
+      font-family: 'Raleway', sans-serif;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 21px; }
+  .registration__form {
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    color: #372E11; }
+    .registration__form-label {
+      display: block;
+      margin-bottom: 10px;
+      line-height: 16px; }
+      .registration__form-label--mob {
+        display: none; }
+    .registration__form-input {
+      display: block;
+      margin-bottom: 20px;
+      background-color: #FFF8E1;
+      border: none;
+      border-radius: 6px;
+      padding: 16px 8px;
+      width: 304px; }
+      .registration__form-input::placeholder {
+        color: #8E825C; }
+      .registration__form-input--mob {
+        display: none; }
+    .registration__form-btns {
+      display: flex; }
+    .registration__form-btn {
+      width: 320px;
+      height: 51px;
+      background-color: #FFE182;
+      border: none;
+      border-radius: 12px;
+      margin-top: 20px;
+      font-family: 'Raleway', sans-serif;
+      font-size: 16px;
+      line-height: 18px;
+      font-weight: 600; }
+      .registration__form-btn--back {
+        width: 128px;
+        background-color: #EDEDED;
+        margin-right: 9px;
+        margin-bottom: 20px; }
+      .registration__form-btn--enter {
+        width: 183px; }
+    .registration__form-symbols {
+      max-width: 320px;
+      margin-bottom: 20px; }
+
+input[type="checkbox"]:checked,
+input[type="checkbox"]:not(:checked) {
+  position: absolute;
+  left: -9999px; }
+
+input[type="checkbox"]:checked + label,
+input[type="checkbox"]:not(:checked) + label {
+  display: inline-block;
+  position: relative;
+  padding-left: 28px;
+  line-height: 20px;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 18px; }
+
+input[type="checkbox"]:checked + label:before,
+input[type="checkbox"]:not(:checked) + label:before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #0E493F;
+  border-radius: 4px; }
+
+input[type="checkbox"]:checked + label:before {
+  background-color: #0E493F; }
+
+input[type="checkbox"]:not(:checked) + label:before {
+  background-color: #fff; }
+
+input[type="checkbox"]:checked + label:after,
+input[type="checkbox"]:not(:checked) + label:after {
+  content: "";
+  position: absolute;
+  transition: all 0.2s ease; }
+
+input[type="checkbox"]:checked + label:after,
+input[type="checkbox"]:not(:checked) + label:after {
+  left: 6px;
+  top: 5px;
+  width: 10px;
+  height: 5px;
+  border-radius: 1px;
+  border-left: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  transform: rotate(-45deg); }
+
+/******************* END: REGISTRATION *******************/
+/******************* BEGIN: FOOTER *******************/
+.footer {
+  background-color: #372E11;
+  padding: 80px 100px;
+  color: #FFFBED; }
+  .footer-wrap {
+    max-width: 1420px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 4fr 2fr 2fr;
+    grid-template-areas: "ofices social contacts";
+    justify-items: end; }
+  .footer__title {
+    font-family: 'Marmelad', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 24px; }
+  .footer__text {
+    max-width: 275px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21px;
+    margin-right: 40px; }
+  .footer__ofices {
+    grid-area: ofices; }
+  .footer__adress {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .footer__social {
+    grid-area: social; }
+    .footer__social-item {
+      margin-bottom: 16px; }
+    .footer__social-link {
+      color: #FFFBED;
+      font-family: 'Raleway', sans-serif;
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 23px; }
+  .footer__contacts {
+    grid-area: contacts; }
+    .footer__contacts-phone, .footer__contacts-mail {
+      color: #FFFBED;
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 23px;
+      display: block;
+      margin-bottom: 16px; }
+    .footer__contacts-phone {
+      font-family: 'Roboto', sans-serif; }
+    .footer__contacts-mail {
+      font-family: 'Raleway', sans-serif; }
+    .footer__contacts-btn {
+      text-align: center;
+      font-family: 'Raleway', sans-serif;
+      font-weight: 600;
+      font-size: 16px;
+      width: 172px;
+      height: 48px;
+      background-color: #FFE182;
+      color: #372E11;
+      display: flex;
+      border-radius: 12px;
+      align-items: center;
+      justify-content: center; }
+  .footer__copyright {
+    display: none; }
+
+/******************* END: FOOTER *******************/
+@media screen and (max-width: 1400px) {
+  .header {
+    margin-bottom: 80px; }
+    .header__logo-img {
+      width: 60px;
+      height: auto; }
+    .header__menu-item:not(:last-child) {
+      margin-right: 20px; }
+    .header__menu-link {
+      font-size: 16px; }
+    .header__contacts-link {
+      font-size: 16px;
+      padding: 10px 15px; }
+    .header__contacts-phone {
+      font-size: 18px;
+      padding: 10px 15px;
+      margin-right: 10px; }
+    .header__contacts-enter {
+      margin-right: 7px; }
+
+  .content-wrap {
+    padding: 30px 0px; }
+
+  .registration-wrap {
+    max-width: 750px; }
+
+  .footer {
+    padding: 60px 100px; }
+    .footer__social {
+      margin-right: 20px; }
+      .footer__social-link {
+        font-size: 16px; }
+    .footer__contacts-phone, .footer__contacts-mail {
+      font-size: 16px; }
+    .footer__contacts-btn {
+      width: 150px;
+      height: 40px; } }
+@media screen and (max-width: 985px) {
+  .main {
+    background: url(../img/background-laptop.jpg) no-repeat center/cover; }
+
+  .header {
+    padding: 20px;
+    margin-bottom: 0px; }
+    .header__logo-img {
+      width: 98px;
+      height: 86px;
+      margin-right: 118px; }
+    .header__menu {
+      display: none; }
+    .header__contacts {
+      display: flex;
+      align-items: center; }
+      .header__contacts-enter {
+        margin-right: 20px; }
+      .header__contacts-join {
+        display: none; }
+      .header__contacts-link {
+        font-size: 18px;
+        padding: 14px 30px; }
+      .header__contacts-phone {
+        font-size: 20px;
+        padding: 14px 30px;
+        margin-right: 20px; }
+      .header__contacts-burger {
+        z-index: 5;
+        display: block;
+        position: relative;
+        width: 25px;
+        height: 18px;
+        cursor: pointer; }
+        .header__contacts-burger span, .header__contacts-burger::before, .header__contacts-burger::after {
+          left: 0;
+          position: absolute;
+          height: 10%;
+          transition: all 0.3s ease 0s;
+          background-color: #372E11; }
+        .header__contacts-burger::before, .header__contacts-burger::after {
+          content: ""; }
+        .header__contacts-burger::before {
+          width: 25px;
+          top: 0; }
+        .header__contacts-burger::after {
+          width: 10px;
+          bottom: 0; }
+        .header__contacts-burger span {
+          top: 50%;
+          width: 17px;
+          transform: scale(1) translate(0px, -50%); }
+    .header__tabs {
+      display: flex;
+      align-items: center;
+      padding: 8px 4px; }
+      .header__tabs-item {
+        color: #9B9B99;
+        font-family: 'Raleway', sans-serif;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 23px;
+        margin: 4px; }
+
+  .active {
+    color: #372E11; }
+
+  .content-wrap {
+    padding: 80px 0px;
+    max-width: 728px; }
+  .content__btns {
+    margin-bottom: 127px; }
+
+  .registration {
+    padding: 40px; }
+    .registration-wrap {
+      display: block;
+      max-width: 624px;
+      padding: 32px;
+      background: #FFFBED; }
+    .registration__description {
+      margin-right: 0px;
+      margin-bottom: 58px; }
+    .registration__form {
+      display: flex;
+      justify-content: space-between; }
+      .registration__form.hide {
+        display: none; }
+      .registration__form-label--mob {
+        display: block; }
+      .registration__form-label--desk {
+        display: none; }
+      .registration__form-input {
+        width: 260px; }
+        .registration__form-input--mob {
+          display: block; }
+        .registration__form-input--desk {
+          display: none; }
+      .registration__form-btns {
+        display: flex;
+        justify-content: flex-end; }
+      .registration__form-btn {
+        width: 292px; }
+        .registration__form-btn--back {
+          width: 105px;
+          margin-right: 8px; }
+        .registration__form-btn--enter {
+          width: 179px; }
+      .registration__form-password {
+        display: flex;
+        justify-content: space-between; }
+        .registration__form-password.hide {
+          display: none; }
+      .registration__form-symbols {
+        max-width: 292px; }
+      .registration__form-block {
+        max-width: 292px; }
+
+  .footer {
+    padding: 32px 24px; }
+    .footer-wrap {
+      grid-template-columns: 2fr 1fr;
+      grid-template-areas: "ofices contacts" "social contacts";
+      justify-items: start;
+      margin-bottom: 48px; }
+    .footer__text {
+      margin-right: 0;
+      margin-bottom: 16px; }
+    .footer__adress {
+      display: block;
+      margin-bottom: 32px; }
+    .footer__social {
+      max-width: 171px; }
+      .footer__social-link {
+        font-size: 20px;
+        line-height: 23px; }
+    .footer__contacts-phone, .footer__contacts-mail {
+      font-size: 20px; }
+    .footer__copyright {
+      display: inline;
+      color: #B9B3B3;
+      font-size: 12px;
+      line-height: 14px;
+      font-weight: 400;
+      font-family: 'Raleway', sans-serif; } }
+@media screen and (max-width: 430px) {
+  .main {
+    background: url(../img/background-mob.jpg) no-repeat center/cover; }
+
+  .header {
+    padding: 8px 20px;
+    margin-bottom: 34px; }
+    .header__logo, .header__logo-img {
+      width: 48px;
+      height: 42px;
+      margin-right: 0px; }
+    .header__contacts {
+      display: flex;
+      align-items: center; }
+      .header__contacts-enter {
+        display: none; }
+      .header__contacts-phone {
+        font-size: 18px;
+        padding: 8px;
+        margin-right: 0px; }
+    .header__tabs {
+      display: none; }
+      .header__tabs-mob {
+        display: flex; }
+      .header__tabs-item {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 18px; }
+
+  .content-wrap {
+    padding: 60px 20px;
+    max-width: 320px; }
+  .content__title {
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 24px; }
+    .content__title .desk {
+      display: none; }
+    .content__title .mob {
+      display: inline; }
+  .content__subtitle {
+    font-size: 16px;
+    line-height: 18px;
+    margin: 0 auto 24px auto; }
+  .content__btns {
+    margin-bottom: 92px; }
+    .content__btns-btn {
+      font-size: 16px;
+      line-height: 18px; }
+    .content__btns .buy {
+      padding: 12px 13px;
+      margin-right: 8px; }
+    .content__btns .sell {
+      padding: 12px 7.5px; }
+
+  .registration {
+    padding: 20px; }
+    .registration-wrap {
+      padding: 20px; }
+    .registration__description {
+      margin-bottom: 32px; }
+      .registration__description-title {
+        font-size: 24px;
+        line-height: 28px;
+        margin-bottom: 32px; }
+      .registration__description-text {
+        font-size: 16px;
+        line-height: 18px; }
+    .registration__form {
+      flex-direction: column;
+      align-items: center; }
+      .registration__form-label--mob {
+        display: none; }
+      .registration__form-label--desk {
+        display: block; }
+      .registration__form-input--mob {
+        display: none; }
+      .registration__form-input--desk {
+        display: block; }
+      .registration__form-btn {
+        width: 280px; }
+      .registration__form-password {
+        flex-direction: column;
+        align-items: center; }
+        .registration__form-password.hide {
+          display: none; }
+      .registration__form-symbols {
+        max-width: 280px; }
+      .registration__form-block {
+        max-width: 280px; }
+
+  .footer {
+    padding: 32px 20px; }
+    .footer-wrap {
+      display: block; }
+    .footer__adress {
+      margin-bottom: 48px; }
+    .footer__social {
+      margin-bottom: 48px; } }
+
+/*# sourceMappingURL=style.css.map */
